@@ -7,25 +7,25 @@ function App(props) {
   const expenses = [
     {
       id: 1,
-      date: new Date(2023, 2, 24),
+      date: new Date(2025, 5, 3),
       title: "house to buy",
       amount: 1.5,
     },
     {
       id: 2,
-      date: new Date(2023, 2, 24),
+      date: new Date(2023, 6, 24),
       title: "car to buy",
       amount: 0.2,
     },
     {
       id: 3,
-      date: new Date(2023, 2, 24),
+      date: new Date(2026, 9, 24),
       title: "biz income",
       amount: 20,
     },
     {
       id: 4,
-      date: new Date(2023, 2, 24),
+      date: new Date(2024, 9, 24),
       title: "rented income",
       amount: 2,
     },
@@ -33,6 +33,7 @@ function App(props) {
   return (
     <div className="App">
       <h1>Expense Tracking project</h1>
+      {/* expense value set dynamiccaly by props below inside single curly braces */}
       <ExpenseItem
         title={expenses[0].title}
         date={expenses[0].date}
