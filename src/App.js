@@ -5,8 +5,7 @@ import ExpenseItem from "./components/ExpenseItem";
 function App() {
   return (
     <div className="App">
-      <h1>react udemy project started</h1>
-      <p>this is visible</p>
+      <h1>Expense Tracking project</h1>
       <ExpenseItem></ExpenseItem>
     </div>
   );
