@@ -1,9 +1,8 @@
 import React from "react";
 
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses";
 
-function App(props) {
-  //dummy data hard coded -rendered via props
+function App() {
   const expenses = [
     {
       id: 1,
@@ -33,28 +32,7 @@ function App(props) {
   return (
     <div className="App">
       <h1>Expense Tracking project</h1>
-      {/* expense value set dynamiccaly by props below inside single curly braces */}
-      <ExpenseItem
-        title={expenses[0].title}
-        date={expenses[0].date}
-        amount={expenses[0].amount}
-      />
-      <ExpenseItem
-        title={expenses[1].title}
-        date={expenses[1].date}
-        amount={expenses[1].amount}
-      />
-
-      <ExpenseItem
-        title={expenses[2].title}
-        date={expenses[2].date}
-        amount={expenses[2].amount}
-      />
-      <ExpenseItem
-        title={expenses[3].title}
-        date={expenses[3].date}
-        amount={expenses[3].amount}
-      />
+      <Expenses items={expenses} />
     </div>
   );
 }
