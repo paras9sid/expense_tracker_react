@@ -1,6 +1,6 @@
 import React from "react";
 
-import Expenses from "./components/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 
 function App() {
   const expenses = [
@@ -30,19 +30,11 @@ function App() {
     },
   ];
 
-  // return (
-  //   <div className="App">
-  //     <h1>Expense Tracking project</h1>
-  //     <Expenses items={expenses} />
-  //   </div>
-  // );
-
-  //above code w/o using jsx
-  return React.createElement(
-    "div",
-    {},
-    React.createElement("h2", {}, "Expense Tracking app"),
-    React.createElement(Expenses, { items: expenses })
+  return (
+    <div className="App">
+      <h1>Expense Tracking project</h1>
+      <Expenses items={expenses} />
+    </div>
   );
 }
 
