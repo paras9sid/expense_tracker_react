@@ -1,7 +1,8 @@
 import React from "react";
 import "./ExpenseDate.css";
 
-function ExpenseDate(props) {
+// function ExpenseDate(props) {
+const ExpenseDate = (props) => {
   //   {/* converting to month year day as per indian time  */}
   //     {/* https://www.w3schools.com/jsref/jsref_tolocalestring.asp */}
   const month = props.date.toLocaleString("en-IN", { month: "long" });
@@ -18,6 +19,6 @@ function ExpenseDate(props) {
       <div className="expense-date__day">{day}</div>
     </div>
   );
-}
+};
 
 export default ExpenseDate;
