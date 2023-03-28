@@ -29,11 +29,20 @@ function App() {
       amount: 2,
     },
   ];
-  return (
-    <div className="App">
-      <h1>Expense Tracking project</h1>
-      <Expenses items={expenses} />
-    </div>
+
+  // return (
+  //   <div className="App">
+  //     <h1>Expense Tracking project</h1>
+  //     <Expenses items={expenses} />
+  //   </div>
+  // );
+
+  //above code w/o using jsx
+  return React.createElement(
+    "div",
+    {},
+    React.createElement("h2", {}, "Expense Tracking app"),
+    React.createElement(Expenses, { items: expenses })
   );
 }
 
