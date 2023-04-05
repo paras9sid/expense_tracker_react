@@ -10,25 +10,25 @@ const App = () => {
     {
       id: 1,
       date: new Date(2025, 5, 3),
-      title: "house to buy",
+      title: "item1",
       amount: 1.5,
     },
     {
       id: 2,
       date: new Date(2023, 6, 24),
-      title: "car to buy",
+      title: "item2",
       amount: 0.2,
     },
     {
       id: 3,
       date: new Date(2026, 9, 24),
-      title: "biz income",
+      title: "item3",
       amount: 20,
     },
     {
       id: 4,
       date: new Date(2024, 9, 24),
-      title: "rented income",
+      title: "item4",
       amount: 2,
     },
   ];
