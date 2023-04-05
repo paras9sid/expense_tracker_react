@@ -41,21 +41,3 @@ const App = () => {
 };
 
 export default App;
-
-// import React from "react";
-// import ExpenseItem from "./components/Expenses/ExpenseItem";
-
-// function App() {
-//   return (
-//     <div>
-//       <h1>App rendered</h1>
-//       <p>this is also visible!</p>
-//       <ExpenseItem />
-//       <ExpenseItem />
-//       <ExpenseItem />
-//       <ExpenseItem />
-//     </div>
-//   );
-// }
-
-// export default App;
