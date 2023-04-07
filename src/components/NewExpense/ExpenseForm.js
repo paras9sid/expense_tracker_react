@@ -1,55 +1,21 @@
 import React, { useState } from "react";
 import "./ExpenseForm.css";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
 
-  //combininng multiple state above into single state below
-  //states grouped together with use of object
-
-  // const [userInput, setUserInput] = useState({
-  //   enteredTitle: "",
-  //   enteredAmount: "",
-  //   enteredDate: "",
-  // });
-
   const titleChangeHandler = (event) => {
-    // console.log("title changed!");
     setEnteredTitle(event.target.value);
-    // setUserInput({
-    //   ...userInput,
-    //   enteredTitle: event.target.value,
-    // });
-
-    //way of writing above setUserInput with arrow function
-    //   setUserInput((prevState) => {
-    //     return {
-    //       ...prevState,
-    //       enteredTitle: event.target.value,
-    //     };
-    //   });
   };
 
   const amountChangeHandler = (event) => {
     setEnteredAmount(event.target.value);
-    //   setUserInput((prevState) => {
-    //     return {
-    //       ...prevState,
-    //       enteredAmount: event.target.value,
-    //     };
-    //   });
   };
 
   const dateChangeHandler = (event) => {
     setEnteredDate(event.target.value);
-    //   setUserInput((prevState) => {
-    //     return {
-    //       ...prevState,
-    //       enteredDate: event.target.value,
-    //     };
-    //   });
   };
 
   const submitHandler = (event) => {
@@ -59,7 +25,7 @@ const ExpenseForm = () => {
       amount: enteredAmount,
       date: new Date(enteredDate),
     };
-    console.log(expenseData);
+    props.onSaveExpenseData(expenseData);
     setEnteredTitle("");
     setEnteredAmount("");
     setEnteredDate("");
