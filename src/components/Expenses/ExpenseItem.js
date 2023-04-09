@@ -27,7 +27,7 @@ const ExpenseItem = (props) => {
       {/* <button onClick={() => console.log("clicked")}>Change Title</button>--> will print clicked in console as per the stmt in arrow function in listener */}
 
       {/* function passed in onClick listener and written above return in componenet function */}
-      <button onClick={clickHandler}>Change Title</button>
+      {/* <button onClick={clickHandler}>Change Title</button> */}
     </Card>
   );
 };
