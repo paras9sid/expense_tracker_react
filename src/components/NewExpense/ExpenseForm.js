@@ -22,7 +22,7 @@ const ExpenseForm = (props) => {
     event.preventDefault(); // page will not reload - page will be same with handling with js
     const expenseData = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
     props.onSaveExpenseData(expenseData);
